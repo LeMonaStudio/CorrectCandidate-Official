@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.thenativecitizens.correctcandidate_recruiter.ui.splash.SplashFragment"
+        tools:layout="@layout/fragment_splash"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragmentCandidate"
+            app:destination="@id/homeFragmentCandidate" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragmentRecruiter"
+            app:destination="@id/homeFragmentRecruiter" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        tools:layout="@layout/fragment_login"
+        android:name="com.thenativecitizens.correctcandidate_recruiter.ui.auth.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragmentCandidate"
+            app:destination="@id/homeFragmentCandidate" />
+        <action
+            android:id="@+id/action_loginFragment_to_userTypeFragment"
+            app:destination="@id/userTypeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragmentRecruiter"
+            app:destination="@id/homeFragmentRecruiter" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragmentCandidate"
+        tools:layout="@layout/home_fragment_candidate"
+        android:name="com.thenativecitizens.correctcandidate_recruiter.ui.main.candidate.HomeFragmentCandidate"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragmentCandidate_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        tools:layout="@layout/fragment_sign_up"
+        android:name="com.thenativecitizens.correctcandidate_recruiter.ui.auth.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/action_signUpFragment_to_userTypeFragment"
+            app:destination="@id/userTypeFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userTypeFragment"
+        tools:layout="@layout/fragment_user_type"
+        android:name="com.thenativecitizens.correctcandidate_recruiter.ui.auth.UserTypeFragment"
+        android:label="UserTypeFragment">
+        <action
+            android:id="@+id/action_userTypeFragment_to_homeFragmentCandidate"
+            app:destination="@id/homeFragmentCandidate" />
+        <action
+            android:id="@+id/action_userTypeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_userTypeFragment_to_homeFragmentRecruiter"
+            app:destination="@id/homeFragmentRecruiter" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragmentRecruiter"
+        android:name="com.thenativecitizens.correctcandidate_recruiter.ui.main.recruiter.HomeFragmentRecruiter"
+        android:label="home_fragment_recruiter"
+        tools:layout="@layout/home_fragment_recruiter" >
+        <action
+            android:id="@+id/action_homeFragmentRecruiter_to_questionDetailsFragment"
+            app:destination="@id/questionDetailsFragment" />
+        <action
+            android:id="@+id/action_homeFragmentRecruiter_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragmentRecruiter_to_brandDetailsFragment"
+            app:destination="@id/brandDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionDetailsFragment"
+        tools:layout="@layout/fragment_question_details"
+        android:name="com.thenativecitizens.correctcandidate_recruiter.ui.main.recruiter.aptitude.QuestionDetailsFragment"
+        android:label="QuestionDetailsFragment" />
+    <fragment
+        android:id="@+id/brandDetailsFragment"
+        tools:layout="@layout/dialog_brand_details"
+        android:name="com.thenativecitizens.correctcandidate_recruiter.ui.main.recruiter.BrandDetailsFragment"
+        android:label="BrandDetailsFragment" >
+        <action
+            android:id="@+id/action_brandDetailsFragment_to_homeFragmentRecruiter"
+            app:destination="@id/homeFragmentRecruiter" />
+    </fragment>
+</navigation>

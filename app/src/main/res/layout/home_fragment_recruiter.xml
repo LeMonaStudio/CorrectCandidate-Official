@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools">
+
+<data>
+
+</data>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.recruiter.HomeFragmentRecruiter">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/new_aptitude_test_btn"
+        android:contentDescription="@string/new_aptitude_test_fab_image_description"
+        android:background="@color/color_primary"
+        android:src="@drawable/ic_add_pq"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/progress_container"
+        android:background="?attr/colorOnPrimary"
+        android:elevation="8dp"
+        android:alpha="0.7"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progress"
+            android:indeterminate="true"
+            android:layout_gravity="center"
+            app:indicatorSize="72dp"
+            app:trackThickness="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

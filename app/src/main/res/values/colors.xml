@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--My Custom Colors-->
+    <!--<color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_primary">#e8d33f</color>
+    <color name="color_primary_dark">#d17b0f</color>
+    <color name="color_primary_light">#edff7a</color>
+    <color name="color_accent">#b7f0ad</color>
+    <color name="color_secondary">#b7f0ad</color>
+    <color name="color_secondary_variant">#d2ff96</color>
+    <color name="grey">#F7F7F7</color>
+    <color name="grey_four">#ff808080</color>
+    <color name="grey_two">#BDBDBD</color>
+    <color name="grey_three">#5A5958</color>
+    <color name="black_shade">#313131</color>-->
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_primary">#CA9CE1</color>
+    <color name="color_primary_dark">#685F74</color>
+    <color name="color_primary_light">#F2BEFC</color>
+    <color name="color_accent">#e8d33f</color>
+    <color name="color_secondary">#e8d33f</color> <!--#EAD5E6 -->
+    <color name="color_secondary_variant">#d17b0f</color> <!--#F3E0EC -->
+    <color name="grey">#F7F7F7</color>
+    <color name="grey_four">#ff808080</color>
+    <color name="grey_two">#BDBDBD</color>
+    <color name="grey_three">#5A5958</color>
+    <color name="black_shade">#313131</color>
+
+    <color name="error_color">#F44336</color>
+    <color name="valid_color">#8BC34A</color>
+</resources>
